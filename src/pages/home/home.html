@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf=" role  == 1" class="margin">
+    <button ion-button color="primary" block (click)="cekNilai()">Cek Nilai</button>
+    <hr>
+    <button ion-button color="primary" block (click)="cekIpk()">Cek Ipk</button>
+  </div>
+
+  <div *ngIf=" role  == 0" class="margin">
+    <button ion-button color="primary" block (click)="inputNilai()">Input Nilai</button>
+  </div>
+
+  <!-- <ion-anchor href="logout()">Logout</ion-anchor> -->
+  <a (click)="logout()" text-center>Logout</a>
+</ion-content>
