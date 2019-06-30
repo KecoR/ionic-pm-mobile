@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ApiProvider {
 
-  urlApi:any = 'http://192.168.100.6:8000/';
+  urlApi:any = 'YourApiUrl';
   option:any;
 
   constructor(public http: Http) {
